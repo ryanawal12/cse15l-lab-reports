@@ -22,9 +22,9 @@ Step 3: Trying some Commands
 
 Above are screenshots of the output when I used some of the commands that we learnt in class. 
 1. pwd - prints the current directory
-2. ls -lat - lists all the files in the current directory
+2. ls -lat - lists all the files in the current directory 
 3. cd - changes my current directory to the home directory
 4. .. - takes us to the parent directory
-5. cat /home/linux/ieng6/cs15lsp23/public/hello.txt - concatenates or prints the contents of the hello.txt file stored at the path given
+5. cat /home/linux/ieng6/cs15lsp23/public/hello.txt - concatenates or prints the contents of the hello.txt file stored at the path given.
 
 By using some of these commands in combination, I have bolstered my knowledge of their working over the course of this lab.
