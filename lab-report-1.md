@@ -9,7 +9,7 @@ Above is a screenshot of the startup page of VSCode taken on my personal compute
 
 Step 2: Remotely Connecting
 
-![Image](Remotely Connecting.png)
+![Image](Remotely connecting.png)
 
 Above shows the screenshot of the screen post successfully remotely connecting to the server. Since I was on a mac, I was able to skip the steps pertaining to downloading git for windows and installing git bash. I used the command $ ssh cs15lsp23hh@ieng6.ucsd.edu to ssh onto the server and entered my password. It then successfully connecting me onto my student account for this course, displaying useful information like latest failed logins (there were many that day while I was not completely sure of the process), the notice, cluser status and the CPU usage.
 
