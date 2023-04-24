@@ -10,7 +10,7 @@ However, if my computer did not have VSCode pre-downloaded, the link to download
 
 
 
-
+***
 
 
 **Step 2: Remotely Connecting**
@@ -22,7 +22,7 @@ I used the command $ ```ssh cs15lsp23hh@ieng6.ucsd.edu``` to securely connect to
 
 
 
-
+***
 
 
 
