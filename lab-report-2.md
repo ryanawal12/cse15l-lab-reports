@@ -5,7 +5,6 @@ In Part 1, I will create a web server called ``StringServer`` that supports the 
 The Code for StringServer is as follows. I have used a lot of the code from the Lab 2 wavelet repository and made modifications in accordance with the requirements of this web server.
 
 ```
-{
 import java.io.IOException;
 import java.net.URI;
 
@@ -46,7 +45,6 @@ class StringServer {
 
         Server.start(port, new Handler());
     }
-}
 }
 ```
 
