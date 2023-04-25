@@ -48,3 +48,25 @@ class StringServer {
 }
 ```
 
+After writing this code, committing and pushing it, I compiled the java files and started the server, using the techniques taught in [LAB 2](https://ucsd-cse15l-s23.github.io/week/week2/#building-and-running-the-server)
+Here is a screenshot of my doing this in the terminal:
+
+![Image](Running the server.png)
+
+I then used the link ``(http://localhost:4029)`` in the browser and added a query of the format ```/add-message?s=<string>``` My first string was "Hello" and you can see the output in the screenshot below:
+
+![Image](ADD MESSAGE 1.png)
+
+Using ```/add-message?s=Hello``` , my ```String handleRequest(URI url)``` method is called. ```url``` is the argument for this method that gets the whole URL => ```http://localhost:4029/add-message?s=Hello``` Then ```url.getPath()``` gets the path part of the address. At this point String s is empty. The array of strings ``parameters`` takes the query part, which is ``s=Hello`` which is split at the "=" using the method ```split("=")``` that is also called.
+Now ``parameters`` has ``{"s","Hello"}``. At this point the string s gets updated to contain ``"Hello\n"``
+
+Onto the next message with the string "How are you. My name is Ryan Awal"
+
+![Image](ADD MESSAGE 2.png)
+
+Using ```/add-message?s=How%20are%20you.%20My%20name%20is%20Ryan%20Awal``` , my ```String handleRequest(URI url)``` method is called. ```url``` is the argument for this method that gets the whole URL => ```http://localhost:4029/add-message?s=How%20are%20you.%20My%20name%20is%20Ryan%20Awal``` Then ```url.getPath()``` gets the path part of the address. At this point String s has ``"Hello\n"``. The array of strings ``parameters`` takes the query part, which is ``s=Hello`` which is split at the "=" using the method ```split("=")``` that is also called.
+Now ``parameters`` has ``{"s","How%20are%20you.%20My%20name%20is%20Ryan%20Awal"}``. At this point the string s gets updated to contain ``"Hello\nHow are you. My name is Ryan Awal\n"``
+
+## **PART 2**
+
+
