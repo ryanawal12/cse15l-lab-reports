@@ -69,4 +69,77 @@ Now ``parameters`` has ``{"s","How%20are%20you.%20My%20name%20is%20Ryan%20Awal"}
 
 ## **PART 2**
 
+I chose to do Part 2 based on the bug in the ``ArrayExamples.java`` ``reverseInPlace(int[] arr)`` method. The purpose of this method is to change the original input array into the reversed order. 
 
+
+The code is buggy. The following JUnit test exposes a symptom of the bug:
+
+```
+@Test
+  public void testReverseInPlace1() {
+    int[] input = {1, 2, 3, 4, 5}; 
+    ArrayExamples.reverseInPlace(input);  
+    assertArrayEquals(new int[] {5, 4, 3, 2, 1}, input);
+  }
+```
+
+The above code tests the expected value with the actual input array after the reverse operation is carried out. Now, the bug remains hidden in the following test case:
+
+```
+@Test
+  public void testReverseInPlace2() {
+    int[] input = {3, 2, 2, 3}; 
+    ArrayExamples.reverseInPlace(input);  
+    assertArrayEquals(new int[] {3, 2, 2, 3}, input);
+  }
+```
+
+The above test case contains a symmetrical array. The program is able to reverse the array in place with this input.
+
+Now, Running the JUnit code, we get the following **SYMPTOM** :
+
+![Image](SYMPTOM.png)
+
+![Image](SYMPTOM 2.png)
+
+The original buggy implementation of this ``reverseInPlace(int[] arr)`` method was as follows:
+
+```
+ static void reverseInPlace(int[] arr) 
+ {
+    for(int i = 0; i < arr.length; i += 1) 
+    {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+The problem with the above code is that it is copying the last array element to the first array element position. This does justice to the fact that the second half gets copied to the first half of the array, but we lose the first half in the process. The result becomes a symmetric array with the nth element from either side being the same. This loss of elements can be fixed using a temp variable as follows:
+
+```
+static void reverseInPlace(int[] arr) 
+{
+    int mid = arr.length/2;
+    int temp;
+    for(int i = 0; i < mid; i += 1) 
+    {
+      temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+}
+```
+
+Using this code the symptoms and thus and the bugs disappear:
+
+![Image](SYMPTOM 4.png)
+
+![Image](SYMPTOM 3.png)
+
+The fix addresses the issue as there are no longer elements being lost in the swap. The temp holds them, while the elements on the second half get transferred to the first half.
+
+Hence, we have successfully debugged the ``reverseInPlace(int[] arr)`` method.
+
+## **PART 3**
+
+Labs in week 2 and week 3 very very informative and enjoyable in terms of the concept I have learned. The one that stood out for me was the debugging and JUnit testing as that was something I did not use prior to this course, and I see how useful it is to remove the bugs that inevitably creep into my code no matter how careful I be. I also enjoyed learning about remotely running the server as that was also something I did for the first time. Overall a very informative couple of weeks and I look forward to take my learning further!
