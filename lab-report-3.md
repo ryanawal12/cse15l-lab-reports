@@ -312,5 +312,84 @@ To illustrate the uses for all 3, I shall give three examples instead of two.
 
 COMMAND:
 
+```
+grep -A4 "In a separate action aimed" ./government/Env_Prot_Agen/final.txt
+```
+
+The above command prints the line in which the searched pattern exists in the path given, and 4 lines after it. The 4 after ``grep -A`` refers to the number of lines to be printed after the search term line. 
+
+OUTPUT:
+
+```
+focus on reducing power plant emissions. In a separate action aimed
+at the same interstate NOx transport problem, in January 2000, EPA
+finalized a rule which was issued in response to petitions from
+several northeastern states under section 126 of the CAA. In this
+rule, EPA found that emissions from large electric generating units
+
+```
+
+Thus, the command has printed the line in which the phrase "In a separate action aimed" exists, and 4 lines after it that exist in ``final.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/government/Env_Prot_Agen``
+
+### *EXAMPLE 2: ``grep -B``*
+
+COMMAND:
+
+```
+grep -B10 "Our aim has not been to assign individual blame." ./911report/preface.txt
+```
+
+The above command prints the line in which the searched pattern exists in the path given, and 10 lines before it. The 10 after ``grep -B`` refers to the number of lines to be printed before the search term line. 
+
+OUTPUT:
+
+```
+and border control, the flow of assets to terrorist organizations, commercial
+                aviation, the role of congressional oversight and resource allocation, and other
+                areas determined relevant by the Commission. In pursuing our mandate, we have
+                reviewed more than 2.5 million pages of documents and interviewed more than 1,200
+                individuals in ten countries. This included nearly every senior official from the
+                current and previous administrations who had responsibility for topics covered in
+                our mandate. We have sought to be independent, impartial, thorough, and nonpartisan.
+                From the outset, we have been committed to share as much of our investigation as we
+                can with the American people. To that end, we held 19 days of hearings and took
+                public testimony from 160 witnesses.
+            Our aim has not been to assign individual blame. Our aim has been to provide the
+
+```
+
+Thus, the command has printed the line in which the phrase "Our aim has not been to assign individual blame." exists, and 10 lines before it that exist in ``preface.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/911report``
+
+### *EXAMPLE 3: ``grep -C``*
+
+COMMAND:
+
+```
+grep -C3 "Before national implementation of the Nursing Home" ./biomed/1471-2318-3-2.txt
+```
+
+The above command prints the line in which the searched pattern exists in the path given, and 3 lines before and after it. The 3 after ``grep -C`` refers to the number of lines to be printed before the search term line. 
+
+OUTPUT:
+
+```
+community-based quality improvement assistance programs to
+        nursing home providers seeking to improve their performance
+        on the Quality Measures.
+        Before national implementation of the Nursing Home
+        Quality Initiative in November 2002, CMS conducted a pilot
+        in six states: Colorado, Florida, Maryland, Ohio, Rhode
+        Island, and Washington. QIO quality improvement activities
+```
+
+Thus, the command has printed the line in which the phrase "Before national implementation of the Nursing Home" exists, and 3 lines before and after it that exist in ``1471-2318-3-2.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/biomed``
+
+WORKING:
+
+Hence we have explored the uses of this group of commands - ``grep -A`` ``grep -B`` ``grep -C``
+While ``grep -A`` prints the searched line in the given file and n lines after it, ``grep -B`` does the same but prints n lines that exist before it and ``grep -C`` prints both - n lines before and after it [(source)](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
+Some practical uses for these commands would include situations where one is parsing a lot of files and can get a short summary/ context of what each file is right on the terminal. It can also be useful while going through errors and warnings in code, as the erroneous code before warnings or the error message after the code can be brought to the terminal. They are also especially great to work with when parsing log files.
 
 
+
+**Thus we have explored 4 different uses for ``grep``. I look forward to understanding other commands and their alternate uses as well. They really help ease workload when working with software**
