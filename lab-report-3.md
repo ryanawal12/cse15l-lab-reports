@@ -150,7 +150,146 @@ It can be useful to check the instance count of an important phrase, or to make 
 
 **Moving on to the next use for ``grep``**
 
-## **USE 3: TO SHOW THE LINE NUMBER OF THE INSTANCE OF A PATTERN/STRING IN A FILE - ``(grep -n)``**
+## **USE 3: TO SHOW THE LINE NUMBER OF THE INSTANCE OF A PATTERN/STRING IN A FILE ``(grep -n)``**
 
+I used `` grep -n `` in ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical``
 
+### *EXAMPLE 1:*
+
+COMMAND:
+
+```
+ grep -n "by" ./biomed/1471-2288-3-9.txt
+```
+
+The above command lists all instances of the string/pattern "by" in the file ``1471-2288-3-9.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/biomed``
+
+OUTPUT:
+
+```
+19:        • Two states might create a "natural experiment" by
+22:        could then be computed by enumeration and arithmetic.
+36:        health by tracking the number of calls to hotlines.
+48:        by ignoring uncorrected confounding, selection biases,
+62:        few weeks turned out to be high by a factor of two, making
+96:          higher by as much as 5%, only report 2.3. This can be
+111:          by reporting 2.35).
+119:          inadvertently recorded and reported by two different
+132:          by the minimum possible, 1, the odds ratio would either
+173:            uncertain, but this is inconsequential (by the above
+177:            dwarfed by that of the numerator (on the order of 1
+181:            precision implied by 2.76 percent - that we are fairly
+186:            estimate is that the raw estimate is low by between 0
+188:            distributed. The process by which they came to this
+197:            with extremely high probability, be exceeded by the
+205:            misclassification error was indeed dwarfed by the
+275:          uncertainty, and that goal is not well served by claiming
+328:          perform and to understand) are reduced by a few factors.
+365:            But greater uncertainty is introduced by the
+377:            extrapolation is off by as much as 25%. To fit these
+406:            is described by the continuous approximation:
+416:            probability for a given value, nothing is lost by this
+431:            uncertain input that entered the equation other than by
+470:          and represented by a histogram that approximates the
+474:          approximates the answer by carrying out simple
+490:          usable by any competent quantitative researcher.
+504:          various input uncertainties - is partially ameliorated by
+535:          represented by one observed case (in order to extrapolate
+569:          foodborne disease incidence is illustrated by the
+595:          samples from monitoring efforts. They are multiplied by a
+597:          incidence of each disease is then multiplied by an
+602:          calculated by estimating the total cases of
+618:          by a normal distribution, with a mean of the point
+746:          illness caused by one pathogen is attributable to
+778:        expert witness by The Delaco Company in litigation related
+```
+
+Thus, all instances of the phrase "by" are listed with their line numbers as they appear in ``1471-2288-3-9.txt``
+
+### *EXAMPLE 2:*
+
+COMMAND:
+
+```
+grep -n "emissions" ./government/Env_Prot_Agen/final.txt
+```
+
+The above command lists all instances of the string/pattern "emissions" in the file ``final.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/government/Env_Prot_Agen``
+
+OUTPUT:
+
+```
+14:significantly reduce and cap NOx, SO2 and mercury emissions from
+22:establish reduction targets for emissions of SO2, NOx and
+39:provide market-based incentives, such as emissions
+43:Nationwide reductions of the three emissions, SO2, NOx and
+74:emissions that cause acid deposition and translated the emission
+75:reduction goal into a nationwide cap on emissions from electric
+79:certainty that the emissions reductions would be achieved and
+83:accounting of their emissions through continuous monitoring and
+86:for limiting SO2 emissions and to be responsible for achieving
+91:emissions from power generation dropping 4.5 million tons from 1990
+92:levels and NOx emissions down 1.5 million tons from 1990 levels
+94:during the first Phase of the program (1995-1999), SO2 emissions
+101:projected the cost of full implementation of the SO2 emissions
+110:permanently caps NOx and SO2 emissions from older power plants in
+120:power plant based on 1997 emissions using a formula that does not
+136:significantly reduces emissions of SO2, NOx and mercury, we can
+144:reductions in air emissions from electric power generation. These
+146:address a variety of emissions including SO2, NOx, CO, PM10, and a
+158:to adopt emissions control requirements in the form of State
+163:interstate transport of NOx emissions to downwind ozone
+166:19 states and the District of Columbia (whose emissions
+168:to revise their SIPs to control summertime NOx emissions. In
+170:focus on reducing power plant emissions. In a separate action aimed
+174:rule, EPA found that emissions from large electric generating units
+178:sources to control their summertime NOx emissions under the Federal
+186:for example, adopted a NOx and SO2 emissions trading program
+189:NOx emissions trading program (the Ozone Transport Commission NOx
+191:lead to further regulation of power plant SO2 emissions (a
+192:precursor to ambient PM2.5) and NOx emissions (both for PM2.5 and
+199:emissions increase -- they include state-of-the-art air pollution
+215:sources and major modifications must offset their emissions
+228:power generators to reduce SO2 and NOx emissions either through the
+234:EPA is developing a rule to limit mercury emissions from
+237:can reasonably be expected to occur as a result of emissions of
+246:mercury emissions.
+247:The utility industry is also required to reduce SO2 emissions
+250:reduce their emissions through emissions limits, which EPA
+257:and limiting NOx, SO2 and mercury emissions, we can provide the
+273:emissions: sulfur dioxide (SO2), nitrogen oxide (NOx), and mercury
+275:successful tool in reducing these emissions. However, while we are
+278:mercury. (Power generation has other emissions, such as carbon
+279:monoxide and coarse particles, but the level of these emissions
+282:share of these key emissions is that significant emissions
+285:before federal laws limiting emissions of CO, NOx and volatile
+290:pollution control equipment for some emissions.
+296:SO2 and NOx emissions from power generation react in the atmosphere
+299:emissions from a variety of sources.) A source emitting NOx and SO2
+317:SO2 and NOx emissions. Sulfates and nitrates that form in the
+318:atmosphere from SO2 and NOx emissions are significant contributors
+332:many urban areas, NOx emissions from cars, trucks, and power plants
+354:harsh weather). Since NOx emissions result in formation of
+355:ground-level ozone, reducing NOx emissions will reduce ozone levels
+363:reducing mercury air emissions. Mercury is highly toxic in small
+387:emissions.
+396:of annual SO2 emissions and 25 percent of NOx emissions are
+401:response to reduced SO2 emissions. In sensitive areas such as the
+409:declined, nitrogen emissions have not changed substantially
+419:bodies by reducing NOx emissions. Some air emissions of NOx from
+430:soil acidification and aluminum mobility, increased emissions from
+454:synergistic effects. Beyond their impacts as separate emissions,
+457:environment. In certain cases, synergies exist between emissions
+459:imperative that efforts to reduce risk address all three emissions
+468:large sulfur loadings over the years. Both emissions count in
+474:accompanying the downward trend in emissions. However, there are
+478:improving, and at best are constant. Logically, if emissions
+493:U.S. man-made greenhouse gas emissions. Power generators, which
+494:emit CO2, contribute abut 29% of the total emissions of all U.S.
+518:determine what levels of greenhouse gas emissions need to be
+520:To address global climate change and greenhouse gas emissions,
+538:achieve emissions reductions most flexibly and costeffectively in
+552:the emissions that cause such serious public health and
+563:reduce significantly the SO2, NOx and mercury emissions from power
+```
 
