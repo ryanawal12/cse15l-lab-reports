@@ -293,3 +293,14 @@ OUTPUT:
 563:reduce significantly the SO2, NOx and mercury emissions from power
 ```
 
+Thus, all instances of the phrase "emissions" are listed with their line numbers as they appear in ``final.txt``
+
+WORKING:
+
+Hence, we have seen that ``grep -n`` is used to show the line number of file with the line matched [(source)](https://www.geeksforgeeks.org/grep-command-in-unixlinux/). This command can be useful in a variety of situations including:
+* Debugging code - all instances of a faulty line/variable can be found in a roject directory to quickly correct mistakes
+* Editing large files - if a particular line needs correction, the command helps you find it easily.
+
+**And we go onto the next use for ``grep`` (Last one for the purposes of this lab report)**
+
+
