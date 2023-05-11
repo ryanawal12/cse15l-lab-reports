@@ -4,11 +4,11 @@ In this lab report, I will be going over 4 alternate uses for the ``grep`` comma
 
 I researched the uses of grep using first the ``man grep`` command on the terminal to open the manual. I then used ChatGPT and [this link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) to further my knowledge. This is what I came up with:
 
-## **USE 1 : TO SEARCH FOR A PATTERN RECURSIVELY IN A DIRECTORY  ``(grep -r)`` **
+## **USE 1 : TO SEARCH FOR A PATTERN RECURSIVELY IN A DIRECTORY  ``(grep -r)``**
 
 I used `` grep -r `` in ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical``
 
-### *EXAMPLE 1: *
+### *EXAMPLE 1:*
 
 COMMAND:
 
@@ -54,7 +54,7 @@ OUTPUT:
 
 Thus, we can see that this command has parsed through all the files in the directory ``./technical/911report`` and returned the file name and the lines which contain instances of the phrase "air traffic control"
 
-### *EXAMPLE 2: *
+### *EXAMPLE 2:*
 
 COMMAND: 
 
