@@ -80,12 +80,13 @@ OUTPUT:
 
 Thus, we can see that this command has parsed through all the files in the directory ``./technical/government/Media`` and returned the file name and the lines which contain instances of the phrase "Legal Aid"
 
+WORKING:
 
-Thus, through these two examples of using the command ``grep -r`` in different directories in ``./technical``, I am more clear about its use --> It prints the searched pattern in the given directory recursively in all the files [Source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/). It is a powerful search tool that can be used for the following purposes:
+Thus, through these two examples of using the command ``grep -r`` in different directories in ``./technical``, I am more clear about its use that it prints the searched pattern in the given directory recursively in all the files [(source)](https://www.geeksforgeeks.org/grep-command-in-unixlinux/). It is a powerful search tool that can be used for the following purposes:
 * Searching for specific content in web pages - If you are working on a web development project and need to search for a specific piece of content in a large set of web pages.
 * Searching for source code - If working on a large software development project, ``grep -r`` can be used to search for all instances of a particular function or variable in the project directory and subdirectories.
 
-We have explored one use of ``grep``. Onto the next.
+**We have explored one use of ``grep``. Onto the next.**
 
 ## **USE 2: TO DISPLAY THE COUNT OF NUMBER OF MATCHES OF A GIVEN PATTERN/STRING ``(grep -c)``**
 
@@ -93,12 +94,63 @@ I used ``grep -c`` in ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/str
 
 ### *EXAMPLE 1:*
 
-COMMAND
+COMMAND:
 
 ```
-
+ grep -c "personnel" ./911report/chapter-1.txt
 ```
 
+The above command counts and returns the number of times the string "personnel" appears in the file ``chapter-1.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/911report``
+
+OUTPUT:
+
+```
+12
+```
+
+Hence, we can conclude that the string "personnel" has been used 12 times in ``chapter-1.txt``
+
+### *EXAMPLE 2:*
+
+COMMAND:
+
+```
+grep -c "personnel" ./911report/*.txt
+```
+
+The above command counts and returns the number of times the string "personnel" appears in the all files of the pattern ``*.txt`` in the directory ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical/911report``
+
+OUTPUT:
+
+```
+./911report/chapter-1.txt:12
+./911report/chapter-10.txt:4
+./911report/chapter-11.txt:5
+./911report/chapter-12.txt:1
+./911report/chapter-13.1.txt:11
+./911report/chapter-13.2.txt:8
+./911report/chapter-13.3.txt:1
+./911report/chapter-13.4.txt:4
+./911report/chapter-13.5.txt:12
+./911report/chapter-2.txt:1
+./911report/chapter-3.txt:8
+./911report/chapter-5.txt:2
+./911report/chapter-6.txt:3
+./911report/chapter-7.txt:1
+./911report/chapter-8.txt:4
+./911report/chapter-9.txt:47
+./911report/preface.txt:0
+```
+Hence, we can conclude that the string "personnel" has been used multiple times across the files of the pattern ``*.txt``in ``./911report``
+
+WORKING:
+
+Thus, we can conclude that ``grep -c`` is used to find the number of lines that matches the given string/pattern [(source)](https://www.geeksforgeeks.org/grep-command-in-unixlinux/). 
+It can be useful to check the instance count of an important phrase, or to make sure it is not too repetitive in a project. The ``grep -c`` command can only be used on files and not directly on directories.
+
+**Moving on to the next use for ``grep``**
+
+## **USE 3: TO SHOW THE LINE NUMBER OF THE INSTANCE OF A PATTERN/STRING IN A FILE - ``(grep -n)``**
 
 
 
