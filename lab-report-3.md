@@ -81,9 +81,23 @@ OUTPUT:
 Thus, we can see that this command has parsed through all the files in the directory ``./technical/government/Media`` and returned the file name and the lines which contain instances of the phrase "Legal Aid"
 
 
+Thus, through these two examples of using the command ``grep -r`` in different directories in ``./technical``, I am more clear about its use --> It prints the searched pattern in the given directory recursively in all the files [Source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/). It is a powerful search tool that can be used for the following purposes:
+* Searching for specific content in web pages - If you are working on a web development project and need to search for a specific piece of content in a large set of web pages.
+* Searching for source code - If working on a large software development project, ``grep -r`` can be used to search for all instances of a particular function or variable in the project directory and subdirectories.
 
+We have explored one use of ``grep``. Onto the next.
 
+## **USE 2: TO DISPLAY THE COUNT OF NUMBER OF MATCHES OF A GIVEN PATTERN/STRING ``(grep -c)``**
 
+I used ``grep -c`` in ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical``
+
+### *EXAMPLE 1:*
+
+COMMAND
+
+```
+
+```
 
 
 
