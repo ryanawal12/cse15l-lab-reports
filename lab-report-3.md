@@ -303,4 +303,14 @@ Hence, we have seen that ``grep -n`` is used to show the line number of file wit
 
 **And we go onto the next use for ``grep`` (Last one for the purposes of this lab report)**
 
+## **USE 4: TO PRINT N SPECIFIC LINES FROM A FILE ``(grep -A)`` ``(grep -B)`` ``(grep -C)``**
+
+I used ``grep -A`` ``(grep -B)`` ``(grep -C)``  in ``/home/linux/ieng6/cs15lsp23/cs15lsp23hh/stringsearch/stringsearch-data/technical``
+To illustrate the uses for all 3, I shall give three examples instead of two.
+
+### *EXAMPLE 1: ``grep -A``*
+
+COMMAND:
+
+
 
