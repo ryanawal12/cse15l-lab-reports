@@ -62,7 +62,7 @@ I would like to thank you for your help once again.
 ---
 ### **Helpful TA:**
 
-No worries. Happy to help. Bugs inevitably manage to creep into our work. Sometimes all it needs is another perspective. To summarise the bug today and to recreate it for practice -
+No worries. Happy to help. Bugs inevitably manage to creep into our work. Sometimes all it needs is another perspective. To summarise the bug today and to recreate it for everyone's practice -
 
 #### The file & directory structure needed
 
